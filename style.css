@@ -68,8 +68,8 @@ h2{color:#ffe18a;margin:8px 0 18px}
   display:flex;
   align-items:center;
   justify-content:center;
+  filter:drop-shadow(0 4px 3px #0008);
 }
-
 .collectible img{
   width:100%;
   height:100%;
