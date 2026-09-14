@@ -49,24 +49,25 @@ h2{color:#ffe18a;margin:8px 0 18px}
 .road:after{
   content:"";
   position:absolute;
-  left:42%;
-  width:16%;
-  top:-100%;
-  height:300%;
+  left:25%;
+  width:50%;
+  top:0;
+  bottom:0;
+  z-index:10;
   background:repeating-linear-gradient(
     to bottom,
     transparent 0 45px,
-    rgba(255,255,255,.35) 45px 90px
+    rgba(255,255,255,.45) 45px 85px
   );
-  animation:roadMove .6s linear infinite;
+  clip-path:polygon(42% 0,58% 0,100% 100%,0 100%);
+  animation:roadMove .5s linear infinite;
   pointer-events:none;
 }
 
 @keyframes roadMove{
-  from{transform:translateY(-20%)}
-  to{transform:translateY(20%)}
+  from{background-position:0 0}
+  to{background-position:0 130px}
 }
-
 #player{position:absolute;z-index:20;width:95px;height:120px;left:50%;bottom:2%;transform:translateX(-50%);display:flex;justify-content:center;align-items:center;filter:drop-shadow(0 6px 3px #0008);transition:left .12s}animation:ganpatiRun .5s infinite alternate ease-in-out;
 #player{
   position:absolute;
