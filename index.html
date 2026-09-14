@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganesh Chaturthi – Festival Maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="menu" class="screen">
+  <div class="festival-symbol">n n n</div>
+  <h1>n Ganesh Chaturthi</h1>
+  <h2>Festival Maker</h2>
+  <p class="welcome">Help Ganesha decorate the festival pandal!</p>
+  <div class="stage-card">
+    <h3>n STAGE 1</h3>
+    <p>Decorate the Pandal</p>
+    <div class="objectives">n Collect Flowers<br>n Collect Diyas<br>n Collect Garlands<br>n Avoid the Mischievous Mouse</div>
+  </div>
+  <button id="playBtn">n START STAGE 1</button>
+  <p class="controls-info">nn Æn Move &nbsp;&nbsp; nn Jump</p>
+</div>
+<div id="game" class="hidden">
+  <header class="hud">
+    <div class="lives-box"><span>⁄n</span><span id="lives"></span></div>
+    <div class="score-box">n <span id="score">0</span></div>
+    <div class="stage-box">n STAGE 1</div>
+  </header>
+  <main id="world">
+    <div class="sky"></div><div class="sun">nn</div>
+    <div class="cloud cloud-one">nn</div><div class="cloud cloud-two">nn</div>
+    <div class="garland top-garland">n n n n n n n</div>
+    <div class="pandal"><div class="pandal-roof">n</div><div class="pandal-text">GANESH FESTIVAL</div></div>
+    <div class="road"><div class="lane lane-left"></div><div class="lane lane-center"></div><div class="lane lane-right"></div></div>
+    <div id="player"><img src="GANESH_transparent.png" alt="Ganesha"></div>
+    <div id="objects"></div>
+  </main>
+  <div class="controls"><button id="leftBtn">n</button><button id="jumpBtn">n</button><button id="rightBtn">n</button></div>
+</div>
+<div id="gameOver" class="screen hidden">
+  <div class="big-icon">n</div><h2>Oh no!</h2><p>Ganesha needs your help!</p><p>Score: <b id="finalScore">0</b></p>
+  <button id="againBtn">n TRY AGAIN</button>
+</div>
+<div id="stageComplete" class="screen hidden">
+  <div class="big-icon">nn</div><h2>Stage 1 Complete!</h2>
+  <p>n The Pandal is beautifully decorated! n</p><p>Score: <b id="completeScore">0</b></p>
+  <p class="bappa">n Ganpati Bappa Morya! n</p>
+  <button id="nextBtn">n STAGE 2</button>
+</div>
+<script src="game.js"></script>
+</body>
+</html
