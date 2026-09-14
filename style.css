@@ -1,0 +1,48 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Arial,sans-serif;background:#11152f;color:#fff}
+body{display:flex;justify-content:center;align-items:center;min-height:100vh}
+button{border:0;border-radius:14px;padding:13px 22px;font-size:17px;font-weight:700;cursor:pointer}
+.hidden{display:none!important}
+.game-shell{width:min(100%,1050px);min-height:100vh;position:relative;overflow:hidden;background:#171a43}
+.screen{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:25px;background:radial-gradient(circle at 50% 25%,#70458f,#25275c 55%,#10142e)}
+.festive-row{font-size:34px;margin-bottom:15px;letter-spacing:5px}
+.om{font-size:62px;color:#ffd45a;text-shadow:0 0 20px #ffb52e}
+h1{font-size:clamp(35px,7vw,64px);margin:8px 0;color:#ffd45a}
+h2{color:#ffe18a;margin:8px 0 18px}
+.tagline{max-width:680px;font-size:18px;line-height:1.5}
+.mission{display:flex;gap:12px;flex-direction:column;margin:12px;padding:14px 25px;border:2px solid #e9b85e;border-radius:16px;background:#ffffff12}
+#playBtn{background:#ffd044;color:#432300;margin:8px}
+.secondary{background:#fff;color:#34345c}
+.instructions{margin-top:15px;line-height:1.6}
+
+#game{height:100vh;position:relative;background:#171a43}
+.hud{height:58px;display:flex;align-items:center;justify-content:space-around;gap:8px;padding:8px 12px;background:#29245b;border-bottom:2px solid #e7b75a;position:relative;z-index:50;font-size:16px}
+#lives{display:flex;gap:3px}
+.life-heart{width:30px;height:30px;object-fit:contain;vertical-align:middle}
+#world{position:absolute;left:0;right:0;top:58px;bottom:85px;overflow:hidden;background:linear-gradient(#241d58 0%,#714a82 48%,#c27a69 100%)}
+.sky{position:absolute;inset:0;background:radial-gradient(circle at 50% 25%,#f3a2c7aa 0 5%,transparent 24%)}
+.moon{position:absolute;right:9%;top:8%;font-size:45px}
+.cloud{position:absolute;opacity:.55;font-size:42px}
+.cloud1{left:10%;top:12%}.cloud2{right:28%;top:22%}
+.pandal{position:absolute;top:5%;left:50%;transform:translateX(-50%);width:72%;text-align:center;z-index:2}
+.pandal-top{font-size:24px;letter-spacing:4px}
+.pandal-roof{font-size:75px;line-height:1}
+.pandal-text{font-size:18px;font-weight:900;color:#ffe36b;text-shadow:0 2px 4px #3a174f}
+.road{position:absolute;left:8%;right:8%;top:35%;bottom:0;background:linear-gradient(90deg,#5e4a45,#82706a 49%,#5e4a45);transform:perspective(450px) rotateX(8deg);transform-origin:bottom}
+.lane{position:absolute;top:0;bottom:0;width:3px;border-left:3px dashed #f5d78c66}
+.lane1{left:33.33%}.lane2{left:66.66%}
+#player{position:absolute;z-index:20;width:95px;height:120px;left:50%;bottom:8%;transform:translateX(-50%);display:flex;justify-content:center;align-items:center;filter:drop-shadow(0 6px 3px #0008);transition:left .12s}
+#player img{max-width:100%;max-height:100%;object-fit:contain}
+#player span{display:none;font-size:70px}
+.player-jump{animation:jump .55s ease-out}
+@keyframes jump{50%{transform:translate(-50%,-100px)}}
+.object{position:absolute;z-index:15;width:58px;height:58px;display:flex;align-items:center;justify-content:center;font-size:42px;filter:drop-shadow(0 4px 3px #0008)}
+.object.enemy{font-size:46px}
+.object img{max-width:100%;max-height:100%;object-fit:contain}
+.side-decor{position:absolute;z-index:5;top:38%;font-size:35px;line-height:1.7;text-align:center;opacity:.9}
+.left-decor{left:1%}.right-decor{right:1%}
+.controls{height:85px;position:absolute;bottom:0;left:0;right:0;background:#211d4dcc;display:flex;justify-content:center;align-items:center;gap:25px;z-index:60}
+.controls button{width:70px;height:55px;padding:0;background:#ffd35a;color:#3c2455}
+.overlay{position:absolute;inset:58px 0 85px;background:#10122dcc;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.overlay button{background:#ffd35a}
+@media(max-width:600px){.hud{font-size:12px}.hud .life-heart{width:24px;height:24px}.pandal{width:95%}.pandal-roof{font-size:55px}.side-decor{font-size:25px}.controls{gap:15px}}
