@@ -28,7 +28,7 @@ h2{color:#ffe18a;margin:8px 0 18px}
 .pandal-top{font-size:24px;letter-spacing:4px}
 .pandal-roof{font-size:75px;line-height:1}
 .pandal-text{font-size:18px;font-weight:900;color:#ffe36b;text-shadow:0 2px 4px #3a174f}
-.road{position:absolute;left:0;right:0;top:0;bottom:0;background-image:url("ROAD.png");background-size:cover;animation: roadRun 1.2s linear infinite;
+.road{position:absolute;left:0;right:0;top:0;bottom:0;background-image:url("ROAD.png");background-size:cover;animation: roadRun 1.2s linear infinite;}
    @keyframes roadRun{
   from{background-position:center 0%}
   to{background-position:center 100%}
