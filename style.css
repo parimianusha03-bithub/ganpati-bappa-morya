@@ -62,8 +62,9 @@ h2{color:#ffe18a;margin:8px 0 18px}
 }
 
 @keyframes ganapatiRun{
-  from{transform:translateY(0)}
-  to{transform:translateY(-8px)}
+  0%{transform:translateY(0) scale(1)}
+  50%{transform:translateY(-10px) scale(1.03)}
+  100%{transform:translateY(0) scale(1)}
 }
 #player span{display:none;font-size:70px}
 .player-jump{animation:jump .55s ease-out}
