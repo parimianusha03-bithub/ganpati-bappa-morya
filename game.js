@@ -37,7 +37,15 @@ function jump(){
 }
 function createCollectible(type,emoji,points){
   const item=document.createElement("div");
-  item.className="collectible";item.textContent=emoji;item.dataset.type=type;item.dataset.points=points;
+  item.className="collectible";item.className="collectible";item.dataset.type=type;item.dataset.points=points;
+ if(type==="flower"){
+const img=document.createElement("img");
+img.src="FLOWER.png";
+img.alt="Flower";
+item.appendChild(img);
+}else{
+item.textContent=emoji;
+}
   item.style.left=lanes[Math.floor(Math.random()*3)];item.style.top="-70px";objects.appendChild(item);return item;
 }
 function createEnemy(){
