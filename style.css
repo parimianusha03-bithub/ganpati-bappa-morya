@@ -28,8 +28,11 @@ h2{color:#ffe18a;margin:8px 0 18px}
 .pandal-top{font-size:24px;letter-spacing:4px}
 .pandal-roof{font-size:75px;line-height:1}
 .pandal-text{font-size:18px;font-weight:900;color:#ffe36b;text-shadow:0 2px 4px #3a174f}
-.road{position:absolute;left:0;right:0;top:0;bottom:0;background-image:url("ROAD.png");background-size:cover;background-position:center;transform:none
-     }
+.road{position:absolute;left:0;right:0;top:0;bottom:0;background-image:url("ROAD.png");background-size:100% 200%;animation: roadRun 1.2s linear infinite;
+   @keyframes roadRun{
+  from{background-position:center 0%}
+  to{background-position:center 100%}
+}  
 .lane{position:absolute;top:0;bottom:0;width:3px;border-left:3px dashed #f5d78c66}
 .lane1{left:33.33%}.lane2{left:66.66%}
 #player{position:absolute;z-index:20;width:180px;height:220px;left:50%;bottom:2%;transform:translateX(-50%);display:flex;justify-content:center;align-items:center;filter:drop-shadow(0 6px 3px #0008);transition:left .12s}
