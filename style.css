@@ -40,7 +40,7 @@ h2{color:#ffe18a;margin:8px 0 18px}
   max-width:100%;
   max-height:100%;
   object-fit:contain;
-  animation:ganapatiRun  .25s infinite alternate ease-in-out;
+  animation:ganapatiRun  .5s infinite alternate ease-in-out;
 }
 
 @keyframes ganapatiRun{
