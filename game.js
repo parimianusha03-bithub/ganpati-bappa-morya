@@ -38,8 +38,9 @@ function jump(){
 function createCollectible(type,emoji,points){
   const item=document.createElement("div");
   item.className="collectible";item.className="collectible";item.dataset.type=type;item.dataset.points=points;
- if(type==="flower"){
-const img=document.createElement("img");
+  const img=document.createElement("img");
+  if(type==="flower"){
+
 img.src="FLOWER.png";
 img.alt="Flower";
 }else if(type==="diya"){
