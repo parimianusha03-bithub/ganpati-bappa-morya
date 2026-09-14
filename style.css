@@ -60,3 +60,18 @@ h2{color:#ffe18a;margin:8px 0 18px}
 .overlay{position:absolute;inset:58px 0 85px;background:#10122dcc;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .overlay button{background:#ffd35a}
 @media(max-width:600px){.hud{font-size:12px}.hud .life-heart{width:24px;height:24px}.pandal{width:95%}.pandal-roof{font-size:55px}.side-decor{font-size:25px}.controls{gap:15px}}
+.collectible{
+  position:absolute;
+  z-index:15;
+  width:58px;
+  height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.collectible img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
