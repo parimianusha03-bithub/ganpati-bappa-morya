@@ -42,7 +42,7 @@ function createCollectible(type,emoji,points){
 }
 function createEnemy(){
   const enemy=document.createElement("div");enemy.className="enemy";
-  const img=document.createElement("img");img.src="ENEMY.png";img.alt="Festival Mouse";enemy.appendChild(img);
+  const img=document.createElement("img");img.src="ENEMY (1).png";img.alt="Festival Mouse";enemy.appendChild(img);
   enemy.style.left=lanes[Math.floor(Math.random()*3)];enemy.style.top="-70px";objects.appendChild(enemy);return enemy;
 }
 function spawnObject(){
