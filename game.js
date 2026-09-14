@@ -64,8 +64,8 @@ function spawnObject(){
   if(!running)return;
   const choice=Math.random();
   if(choice<.28)createCollectible("flower","",10);
-  else if(choice<.50)createCollectible("diya","n",20);
-  else if(choice<.70)createCollectible("garland","n",30);
+  else if(choice<.50)createCollectible("diya","",20);
+  else if(choice<.70)createCollectible("garland","",30);
   else createEnemy();
 }
 function objectHitPlayer(obj){
