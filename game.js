@@ -50,9 +50,9 @@ img.src="GARLAND.png";
 img.alt="Garland";
 }
    item.appendChild(img);
-}else{
-item.textContent=emoji;
-}
+
+
+
   item.style.left=lanes[Math.floor(Math.random()*3)];item.style.top="-70px";objects.appendChild(item);return item;
 }
 function createEnemy(){
