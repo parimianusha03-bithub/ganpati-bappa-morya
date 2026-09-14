@@ -36,11 +36,14 @@ function jump(){
   setTimeout(()=>{player.style.bottom="110px";setTimeout(()=>{jumping=false},350)},450);
 }
 function createCollectible(type,emoji,points){
-  const item=document.createElement("div");
-  item.className="collectible";item.className="collectible";item.dataset.type=type;item.dataset.points=points;
-  const img=document.createElement("img");
-  if(type==="flower"){
+const item=document.createElement("div");
+item.className="collectible";
+item.dataset.type=type;
+item.dataset.points=points;
 
+const img=document.createElement("img");
+
+if(type==="flower"){
 img.src="FLOWER.png";
 img.alt="Flower";
 }else if(type==="diya"){
@@ -50,11 +53,12 @@ img.alt="Diya";
 img.src="GARLAND.png";
 img.alt="Garland";
 }
-   item.appendChild(img);
 
-
-
-  item.style.left=lanes[Math.floor(Math.random()*3)];item.style.top="-70px";objects.appendChild(item);return item;
+item.appendChild(img);
+item.style.left=lanes[Math.floor(Math.random()*3)];
+item.style.top="-70px";
+objects.appendChild(item);
+return item;
 }
 function createEnemy(){
   const enemy=document.createElement("div");enemy.className="enemy";
