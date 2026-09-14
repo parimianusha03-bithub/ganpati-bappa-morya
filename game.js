@@ -42,7 +42,14 @@ function createCollectible(type,emoji,points){
 const img=document.createElement("img");
 img.src="FLOWER.png";
 img.alt="Flower";
-item.appendChild(img);
+}else if(type==="diya"){
+img.src="DIYA.png";
+img.alt="Diya";
+}else if(type==="garland"){
+img.src="GARLAND.png";
+img.alt="Garland";
+}
+   item.appendChild(img);
 }else{
 item.textContent=emoji;
 }
